@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import React, { useState } from "react";
 
-function App() {
+import "./App.css";
+
+export default function App() {
+  let [content, setContent] = useState("");
+  function handleResponse(response) {
+    setContent({
+      quote: response.data.quote,
+      character: response.data.character,
+    });
+  }
+  function searchQuote() {
+    let apiUrl = `https://friends-quotes-api.herokuapp.com/quotes/random`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+  function handleClick(event) {
+    event.preventDefault();
+    searchQuote();
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Maryam - Friends</h1>
+      <h2>Quote Generator</h2>
+      <button onClick={handleClick}>Get quote</button>
+      <div>{content.quote}</div>
+      <div>{content.character}</div>
     </div>
   );
 }
-
-export default App;
