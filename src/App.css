@@ -12,8 +12,8 @@
 }*/
 .App .character {
   animation-duration: 2.5s;
- animation-play-state: ;
-  animation-name:slidein;
+  animation-play-state: paused;
+  animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -26,3 +26,4 @@
     margin-right: 0%;
     width: 100%;
   }
+}
