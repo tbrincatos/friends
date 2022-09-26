@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-} /*
+}
 .App .character {
   border: 1px solid red;
   color: white;
@@ -9,7 +9,7 @@
 }
 .App .character:hover {
   color: black;
-}*/
+} /*
 .App .character {
   animation-duration: 2.5s;
   animation-play-state: paused;
@@ -27,3 +27,4 @@
     width: 100%;
   }
 }
+*/
