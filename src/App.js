@@ -21,11 +21,15 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Friends</h1>
+      <div className="header">
+        <h1>Friends</h1>
+      </div>
       <h2>Guess who said it?</h2>
-      <button onClick={handleClick}>Get quote</button>
-      <div>{content.quote}</div>
+      <div className="quote">{content.quote}</div>
       <div className="character">{content.character}</div>
+      <div className="footer">
+        <button onClick={handleClick}>Get quote</button>
+      </div>
     </div>
   );
 }
