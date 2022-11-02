@@ -50,7 +50,9 @@
   transition: all 300ms ease-in-out;
 }
 .App .character:hover {
+  background-color: #481d10;
   color: white;
+  cursor: pointer;
   transform: scale(1.1);
   transform-origin: center;
 }
