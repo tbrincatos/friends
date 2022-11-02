@@ -51,6 +51,7 @@
 }
 .App .character:hover {
   background-color: #481d10;
+  border: 1px solid #481d10;
   color: white;
   cursor: pointer;
   transform: scale(1.1);
