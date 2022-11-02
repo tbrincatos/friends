@@ -7,7 +7,6 @@
   border-radius: 8px;
   color: white;
   display: block;
-  font-family: "Poppins", sans-serif;
   max-width: 960px;
   margin: 20px auto;
   text-align: center;
@@ -27,9 +26,11 @@
 }
 
 .App h2 {
+  font-family: "Kalam", cursive;
   margin: 0 auto 30px;
 }
 .App .quote {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-style: italic;
   margin-bottom: 10px;
@@ -40,6 +41,7 @@
   border-radius: 30px;
   color: transparent;
   display: inline-block;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   line-height: 1;
   padding: 15px 30px;
@@ -52,10 +54,11 @@
 }
 
 .App button {
-  background-color: #432404;
-  border: 1px solid grey;
+  background-color: #512f15;
+  border: 1px solid #481d10;
   border-radius: 30px;
   color: white;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   display: block;
   line-height: 1;
@@ -65,7 +68,7 @@
 }
 
 .App button:hover {
-  background-color: #638138;
+  background-color: #481d10;
   cursor: pointer;
   transform: scale(1.1);
   transform-origin: center;
